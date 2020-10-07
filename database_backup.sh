@@ -9,4 +9,4 @@ read  MYSQL_UNAME
 echo "Type the name  of the database you want to backup, followed by [ENTER]:"
 read DATABASE
 
-mysqldump -u $MYSQL_UNAME -p  $DATABASE >  /home/${DATABASE}backup.sql
+mysqldump -u $MYSQL_UNAME -p  $DATABASE >  /home/${DATABASE}_backup.sql
