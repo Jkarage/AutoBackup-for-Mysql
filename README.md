@@ -22,3 +22,5 @@ export DATABASE_NAME
 export PATH=$PATH:DATABASE_NAME/bin
 
 Add the line in the crontab file to your crontab and change the path where the file is located depending on your preferences 
+
+The backup is done daily at 2 am everyday
