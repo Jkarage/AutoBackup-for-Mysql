@@ -1,25 +1,23 @@
-# Bash-scripts
+# Database Backup Automator Script
 
-## _The scripts create a database backup for your mysql database_
+## _The Scripts Creates a Database Backup file  for your *mysql* Database_
 
-#### The script uses the following variables and must be placed in the .bashrc file as below
-THE PROCEDURE BELOW IS FOR CREATING PERMANENT VARIABLES
+## The script uses the following variables and must(unnecessary, just create permanent variables however possible) be placed in the .bashrc file as below
 
-MYSQL_USERNAME="yourmysqlusername"
-export MYSQL_USERNAME
+MYSQL_USERNAME="yourmysqlusername" <br>
+export MYSQL_USERNAME <br>
+export PATH=$PATH:MYSQL_USERNAME/bin <br>
 
-export PATH=$PATH:MYSQL_USERNAME/bin
-#### MYSQL_PASSWD="yourmysqlpassword"
-export MYSQL_PASSWD
+## MYSQL_PASSWD="yourmysqlpassword"
+export MYSQL_PASSWD <br>
+export PATH=$PATH:MYSQL_PASSWD/bin <br>
 
-export PATH=$PATH:MYSQL_PASSWD/bin
-#### BACKUP_PATH="The directory you want to save your backups"
-export BACKUP_PATH
-
+## BACKUP_PATH="The directory you want to save your backups"
+export BACKUP_PATH <br>
 export PATH=$PATH:BACKUP_PATH/bin
-#### DATABASE_NAME="The name of the database you want to backup"
-export DATABASE_NAME
 
+## DATABASE_NAME="The name of the database you want to backup"
+export DATABASE_NAME <br>
 export PATH=$PATH:DATABASE_NAME/bin
 
 Add the line in the crontab file to your crontab and change the path where the file is located depending on your preferences 
