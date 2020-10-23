@@ -4,6 +4,7 @@
 
 #### The script uses the following variables and must be placed in the .bashrc file as below
 THE PROCEDURE BELOW IS FOR CREATING PERMANENT VARIABLES
+
 MYSQL_USERNAME="yourmysqlusername"
 export MYSQL_USERNAME
 
