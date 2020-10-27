@@ -1,7 +1,7 @@
 h1. Database backup automator
 
 
-* The Scripts Creates a Database Backup file  for your *mysql* Database or *mongodb* database.
+* The Scripts Creates a Database Backup file  for your *mysql* Database.
 * The script uses the following variables which are placed in the .bashrc file(you can use your own method to create permanent variables)
 
 
@@ -13,15 +13,8 @@ h2. The Variables (Mysql database)
 * BACKUP_PATH
 * DATABASE_NAME
 
-h2. The Variables (Mongodb database)
 
-
-* MONGO_USERNAME
-* MONGO_PASSWD
-* BACKUP_PATH
-* DATABASE_NAME
-
-h2. Put this in the .bashrc file in your root directory.
+h2. Put these in the .bashrc file in your root directory.
 
 
 MYSQL_USERNAME="yourmysqlusername" <br>
@@ -32,16 +25,6 @@ export PATH=$PATH:MYSQL_USERNAME/bin <br>
 MYSQL_PASSWD="yourmysqlpassword"
 export MYSQL_PASSWD <br>
 export PATH=$PATH:MYSQL_PASSWD/bin <br>
-
-
-MONGO_USERNAME="yourmysqlusername" <br>
-export MONGO_USERNAME <br>
-export PATH=$PATH:MONGO_USERNAME/bin <br>
-
-
-MONGO_PASSWD="yourmysqlpassword"
-export MONGO_PASSWD <br>
-export PATH=$PATH:MONGO_PASSWD/bin <br>
 
 
 BACKUP_PATH="The directory you want to save your backups"
